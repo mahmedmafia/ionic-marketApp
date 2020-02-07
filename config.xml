@@ -20,6 +20,20 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="AutoHideSplashScreen" value="false" />
+    <platform name="browser">
+    <preference name="SplashScreen" value="/images/browser/splashscreen.jpg" /> <!-- defaults to "/img/logo.png" -->
+    <preference name="AutoHideSplashScreen" value="true" /> <!-- defaults to "true" -->
+    <preference name="SplashScreenDelay" value="5000" /> <!-- defaults to "3000" -->
+    <!-- <preference name="SplashScreenBackgroundColor" value="green" />  -->
+    <!-- defaults to "#464646" -->
+    <preference name="ShowSplashScreen" value="true" /> <!-- defaults to "true" -->
+    <preference name="SplashScreenWidth" value="600" /> 
+    <!-- defaults to "170" -->
+    <preference name="SplashScreenHeight" value="1000" /> 
+    <!-- defaults to "200" -->
+    <preference name="FadeSplashScreenDuration" value="1000" />
+    <preference name="SplashMaintainAspectRatio" value="false" />
+</platform>
     <platform name="android">
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
             <application android:networkSecurityConfig="@xml/network_security_config" />
