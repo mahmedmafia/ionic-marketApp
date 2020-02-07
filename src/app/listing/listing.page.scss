@@ -1,0 +1,51 @@
+
+ion-segment-button {
+  
+    --color-activated: #ff6969;
+    --color-checked: #ff6969;
+    --color:black;
+    --transition: background-color 15ms linear;
+}
+
+ion-tabs.nav{
+    // position:relative !important;
+    ion-tab-bar {
+        --background: #ff6969;
+        --border-radius:50px;
+        --color: white;
+    }
+    ion-tab-button {
+        
+        --padding-bottom: 0px;
+        --padding-end: 0px;
+        --padding-start: 0px;
+        --padding-top: 0px;
+        font-size:1em;
+    }
+
+}
+ion-toolbar.header {
+    --background:transparent;
+    // --opacity: 0;
+    --padding-bottom: 4px;
+    --padding-end: 4px;
+    --padding-start: 4px;
+    --padding-top: 4px;
+    position:relative;
+    display:block;
+    height:20%;
+    &::after {
+  content: "";
+  background: url('https://via.placeholder.com/150');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position:center;
+  background-size:cover;
+  
+}
+}

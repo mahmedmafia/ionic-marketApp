@@ -1,0 +1,72 @@
+  
+  <ion-toolbar class="header">
+    <ion-buttons slot="secondary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="cart"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="back">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="1" checked>
+      Meat
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      Fish
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content>
+<!-- <ion-img src="https://via.placeholder.com/300X150"></ion-img> -->
+    
+ <!-- <ion-tabs  class="actions">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button > 
+      <ion-label>Sort By</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button >
+      <ion-label>Filter</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs> -->
+<ion-list>
+  <ion-item *ngFor="let item of filtered">
+    <ion-label>{{item.name }}Hello{{ item.category}}</ion-label>
+  </ion-item>
+</ion-list>
+<ion-router-outlet></ion-router-outlet>
+<!-- <ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="1" checked>
+      Meat
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      Fish
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar> -->
+</ion-content>
+<ion-tabs class="nav">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="sub"> 
+      <ion-label>Sort</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [tab]="'sub/'+1">
+      <ion-label>Filter</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
