@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubcategoryComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  
 
   ngOnInit() {}
 

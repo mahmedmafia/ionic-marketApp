@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-slides pager="true">
+  <ion-slides pager="true" (ionSlideReachEnd)="goToHome()">
 
     <ion-slide >
       <div class="img-container">
@@ -20,7 +20,14 @@
     </ion-slide>
 
     <ion-slide>
-      <h2>Welcome</h2>
+      <div class="img-container">
+        <img src="
+        https://via.placeholder.com/150">
+      </div>
+      <h4>First Slide</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nesciunt quibusdam aliquid impedit soluta
+        earum facere nobis eligendi harum saepe, debitis fuga blanditiis animi cupiditate tempore ullam excepturi vel
+        quas!</p>
 
       <!-- <img src="images/slide2.png" /> -->
     </ion-slide>

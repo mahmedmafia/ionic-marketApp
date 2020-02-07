@@ -13,6 +13,11 @@ export class IntroPage implements OnInit {
   ngOnInit() {
   }
   goToHome() {
-    this.navCtrl.navigateRoot('home');
+    setTimeout(
+      () => {
+        this.navCtrl.navigateRoot('home');
+
+      }, 2000
+    )
   }
 }

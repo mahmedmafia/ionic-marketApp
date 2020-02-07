@@ -12,15 +12,34 @@ li {
 
 .title-container {
     position: relative;
-
-    img {
+    width: 100%;
+    height: 100%;
+    ion-img {
         width: 100%;
+        height: 100%;
+        display: block;
     }
 
     .title {
         position: absolute;
-        bottom: 10px;
-        margin: 10px
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: darken(#ff6969, 70%);
+        opacity: .2;
+
+    }
+
+    p {
+        position: absolute;
+        bottom: 8px;
+        color:white;
+        left:4px;
+        margin:0;
+        font-weight: bold;
     }
 }
 
@@ -28,7 +47,7 @@ li {
 .md {
     .my-custom-slides {
         height: 30%;
-        width:100%;
+        width: 100%;
         --bullet-background: white;
         --bullet-background-active: #ff6969;
         background: #f1f1f1;
@@ -42,24 +61,26 @@ li {
 
             .img-container {
 
-                height:100%;
-                width:100%;
-                img{
-                    width:100%;
-                    height:100%;
+                height: 100%;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
             }
 
-           
+
         }
-  .swiper-pagination-bullets {
-        position: fixed;
-        bottom: 0px;
-        padding-bottom: 3px;
-    }
+
+        .swiper-pagination-bullets {
+            position: fixed;
+            bottom: 0px;
+            padding-bottom: 3px;
+        }
 
 
     }
 
-  
+
 }
