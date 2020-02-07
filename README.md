@@ -21,7 +21,7 @@ You Can See Splash Screen From Browser,only if you run
 ```
 corodva run browser
 ```
-### Running the app 
+### Running the app s
 * Go to the project folder 
 ```
 cd marketApp
@@ -31,3 +31,8 @@ cd marketApp
 npm install
 ```
 * add cordova plugins
+
+* then run ionic command
+```
+ionic serve
+```
